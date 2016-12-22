@@ -242,8 +242,8 @@ public class BottomNavigationView extends RelativeLayout {
             if (i == currentItem) {
                 container.setBackgroundColor(bottomNavigationItems.get(index).getColor());
                 title.setTextColor(itemActiveColorWithoutColoredBackground);
-                icon.setScaleX((float) 1.1);
-                icon.setScaleY((float) 1.1);
+//                 icon.setScaleX((float) 1.1);
+//                 icon.setScaleY((float) 1.1);
             }
 
             if (isTablet)
@@ -300,11 +300,11 @@ public class BottomNavigationView extends RelativeLayout {
                     BottomNavigationUtils.changeViewTopPadding(view, withText ? viewInactivePaddingTop : viewInactivePaddingTopWithoutText, viewActivePaddingTop);
                 }
 
-                icon.animate()
-                        .setDuration(150)
-                        .scaleX((float) 1.1)
-                        .scaleY((float) 1.1)
-                        .start();
+//                 icon.animate()
+//                         .setDuration(150)
+//                         .scaleX((float) 1.1)
+//                         .scaleY((float) 1.1)
+//                         .start();
 
                 if (isTablet) {
                     centerX = viewList.get(itemIndex).getWidth() / 2;
@@ -350,11 +350,11 @@ public class BottomNavigationView extends RelativeLayout {
                 else
                     BottomNavigationUtils.changeViewTopPadding(view, viewActivePaddingTop, withText ? viewInactivePaddingTop : viewInactivePaddingTopWithoutText);
 
-                icon.animate()
-                        .setDuration(150)
-                        .scaleX((float) 0.9)
-                        .scaleY((float) 0.9)
-                        .start();
+//                 icon.animate()
+//                         .setDuration(150)
+//                         .scaleX((float) 0.9)
+//                         .scaleY((float) 0.9)
+//                         .start();
             }
         }
 
